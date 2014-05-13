@@ -1,0 +1,56 @@
+NAME
+    Locale::Tie - Get/set locale via (localizeable) variables
+
+VERSION
+    This document describes version 0.01 of Locale::Tie (from Perl
+    distribution Locale-Tie), released on 2014-05-13.
+
+SYNOPSIS
+     use Locale::Tie qw($LANG);
+     say "Current locale is ", $LANG; # -> en_US.UTF-8
+     {
+         local $LANG = 'id_ID';
+         printf "%.2f\n", 12.34;  # -> 12,34
+     }
+     printf "%.2f\n", 12.34; # -> 12.34
+
+DESCRIPTION
+    This module is inspired by File::chdir, using a tied scalar variable to
+    get/set stuffs. One benefit of this is being able to use Perl's "local"
+    with it, effectively setting something locally.
+
+EXPORTS
+    They are not exported by default, but exportable.
+
+  $LANG
+TODO
+    Support $LC_ALL, $LC_COLLATE, $LC_NUMERIC, etc.
+
+SEE ALSO
+    POSIX
+
+    Locale::Scope
+
+HOMEPAGE
+    Please visit the project's homepage at
+    <https://metacpan.org/release/Locale-Tie>.
+
+SOURCE
+    Source repository is at <https://github.com/sharyanto/perl-Locale-Tie>.
+
+BUGS
+    Please report any bugs or feature requests on the bugtracker website
+    <https://rt.cpan.org/Public/Dist/Display.html?Name=Locale-Tie>
+
+    When submitting a bug or request, please include a test-file or a patch
+    to an existing test-file that illustrates the bug or desired feature.
+
+AUTHOR
+    Steven Haryanto <stevenharyanto@gmail.com>
+
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2014 by Steven Haryanto.
+
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
+
