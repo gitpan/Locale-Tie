@@ -1,7 +1,7 @@
 package Locale::Tie;
 
-our $DATE = '2014-10-17'; # DATE
-our $VERSION = '0.02'; # VERSION
+our $DATE = '2014-10-23'; # DATE
+our $VERSION = '0.03'; # VERSION
 
 use 5.010001;
 use strict;
@@ -89,7 +89,7 @@ Locale::Tie - Get/set locale via (localizeable) variables
 
 =head1 VERSION
 
-This document describes version 0.02 of Locale::Tie (from Perl distribution Locale-Tie), released on 2014-10-17.
+This document describes version 0.03 of Locale::Tie (from Perl distribution Locale-Tie), released on 2014-10-23.
 
 =head1 SYNOPSIS
 
@@ -167,6 +167,9 @@ L<Locale::Scope>
 
 Other modules with the same concept: L<File::chdir>, L<File::umask>,
 L<System::setuid>.
+
+L<autolocale> which uses L<Variable::Magic> (similar to tie technique) to
+automatically setlocale() when entry C<< $ENV{LANG} >> is set.
 
 =head1 HOMEPAGE
 

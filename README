@@ -2,8 +2,8 @@ NAME
     Locale::Tie - Get/set locale via (localizeable) variables
 
 VERSION
-    This document describes version 0.02 of Locale::Tie (from Perl
-    distribution Locale-Tie), released on 2014-10-17.
+    This document describes version 0.03 of Locale::Tie (from Perl
+    distribution Locale-Tie), released on 2014-10-23.
 
 SYNOPSIS
      use Locale::Tie qw($LANG $LC_ALL $LC_TIME); # ...
@@ -64,6 +64,9 @@ SEE ALSO
 
     Other modules with the same concept: File::chdir, File::umask,
     System::setuid.
+
+    autolocale which uses Variable::Magic (similar to tie technique) to
+    automatically setlocale() when entry $ENV{LANG} is set.
 
 HOMEPAGE
     Please visit the project's homepage at
